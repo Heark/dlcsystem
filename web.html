@@ -1,1 +1,12 @@
-<button id="buy_button">Buy My Game!</button>
+
+<script>
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+GAME = httpGet("https://itch.io/api/1/tMlU2K1QTLDptNeKW4HI6vYuWyy0k224I83fgES2/my-games")
+</script>
